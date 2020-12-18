@@ -3,8 +3,8 @@ from app import App
 app = App()
 
 while True:
-    print("1-) add ingridient\n"
-          "2-) show ingridients\n"
+    print("1-) add ingredient\n"
+          "2-) show ingredients\n"
           "3-) recipe list\n"
           "4-) recipe check\n"
           "q-) exit")
@@ -16,12 +16,12 @@ while True:
         break
 
     elif userInput == "1":
-        ingridient = input("plz enter ingridient: ").upper()
-        amount = input("plz enter amount of ingridient: ")
-        app.addIngridient(ingridient, amount)
+        ingredient = input("plz enter ingredient: ").upper()
+        amount = input("plz enter amount of ingredient: ")
+        app.addIngredient(ingredient, amount)
 
     elif userInput == "2":
-        print(app.showIngridients())
+        print(app.showIngredients())
     elif userInput == "3":
          print(app.recipes())
     elif userInput == "4":
